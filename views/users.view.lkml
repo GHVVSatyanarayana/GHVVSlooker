@@ -13,9 +13,11 @@ view: users {
     sql: ${TABLE}.age ;;
   }
 
+
   dimension: city {
     type: string
     sql: ${TABLE}.city ;;
+
   }
 
   dimension: country {

@@ -3,6 +3,8 @@ connection: "the_look"
 # include all the views
 include: "/views/**/*.view"
 
+
+
 datagroup: satya_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
@@ -102,7 +104,12 @@ explore: user_data {
   }
 }
 
-explore: users {}
+explore: users {
+  access_filter: {
+    field: users.state
+    user_attribute: name123
+  }
+}
 
 explore: vvimgsrc1onerroralert2ll {}
 
