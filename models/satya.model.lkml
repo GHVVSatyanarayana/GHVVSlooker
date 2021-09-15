@@ -104,13 +104,6 @@ explore: user_data {
   }
 }
 
-explore: users {
-  access_filter: {
-    field: users.state
-    user_attribute: name123
-  }
-}
-
 explore: vvimgsrc1onerroralert2ll {}
 
 explore: xin_test_for_bug2 {}
