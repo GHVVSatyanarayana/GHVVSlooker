@@ -27,11 +27,11 @@ view: orders {
     type: date
     sql: ${TABLE}.created_at ;;
     html:
-    {% if _user_attributes['name_of_attribute'] == "U1" %}
+    {% if _user_attributes['u1'] %}
     {{ rendered_value | date: "%b-%d-%y" }}
-    {% elsif _user_attributes['name_of_attribute'] == "U2" %}
+    {% elsif _user_attributes['u2'] %}
     {{ rendered_value | append: "-01" | date: "%B %Y" }}
-    {else}
+    {%else%}
     {{rendered_value | date:"Week %U (%b %d)"}}
       {% endif %} ;;
   }
